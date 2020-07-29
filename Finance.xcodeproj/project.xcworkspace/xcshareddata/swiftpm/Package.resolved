@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SwiftUICharts",
+        "repositoryURL": "https://github.com/AppPear/ChartView.git",
+        "state": {
+          "branch": null,
+          "revision": "3265d3e16b6480158b748095a227ea04c48f80ad",
+          "version": "2.0.0-beta.1"
+        }
+      },
+      {
+        "package": "Progress-Bar",
+        "repositoryURL": "https://github.com/AmeddahAchraf/Progress-Bar-SwifttUI",
+        "state": {
+          "branch": null,
+          "revision": "6d27716afe433d90fb495117ba8539f9618371d0",
+          "version": "1.0.3"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

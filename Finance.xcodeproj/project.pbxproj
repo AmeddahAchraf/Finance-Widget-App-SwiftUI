@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,7 +11,41 @@
 		046C6F3D24CCA30F009AF802 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C6F3C24CCA30F009AF802 /* ContentView.swift */; };
 		046C6F3F24CCA310009AF802 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046C6F3E24CCA310009AF802 /* Assets.xcassets */; };
 		046C6F4224CCA310009AF802 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046C6F4124CCA310009AF802 /* Preview Assets.xcassets */; };
+		046C6F4D24CCA38F009AF802 /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C6F4C24CCA38F009AF802 /* OnBoarding.swift */; };
+		046C6F4F24CCA579009AF802 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C6F4E24CCA579009AF802 /* Main.swift */; };
+		0496177E24D084FF00EFE7B4 /* Progress-Bar in Frameworks */ = {isa = PBXBuildFile; productRef = 0496177D24D084FF00EFE7B4 /* Progress-Bar */; };
+		04F003F924D1D8A500FA8E9B /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 04F003F824D1D8A500FA8E9B /* SwiftUICharts */; };
+		04F003FB24D1E4C400FA8E9B /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F003FA24D1E4C400FA8E9B /* Shapes.swift */; };
+		04F0040324D1E63600FA8E9B /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F0040224D1E63600FA8E9B /* WidgetKit.framework */; };
+		04F0040524D1E63600FA8E9B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F0040424D1E63600FA8E9B /* SwiftUI.framework */; };
+		04F0040824D1E63600FA8E9B /* FinanceW.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F0040724D1E63600FA8E9B /* FinanceW.swift */; };
+		04F0040A24D1E63700FA8E9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F0040924D1E63700FA8E9B /* Assets.xcassets */; };
+		04F0040E24D1E63700FA8E9B /* FinanceWExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 04F0040024D1E63600FA8E9B /* FinanceWExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04F0040C24D1E63700FA8E9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 046C6F2F24CCA30F009AF802 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04F003FF24D1E63600FA8E9B;
+			remoteInfo = FinanceWExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		04F0041224D1E63700FA8E9B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				04F0040E24D1E63700FA8E9B /* FinanceWExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		046C6F3724CCA30F009AF802 /* Finance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Finance.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +54,15 @@
 		046C6F3E24CCA310009AF802 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		046C6F4124CCA310009AF802 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		046C6F4324CCA310009AF802 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		046C6F4C24CCA38F009AF802 /* OnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
+		046C6F4E24CCA579009AF802 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		04F003FA24D1E4C400FA8E9B /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
+		04F0040024D1E63600FA8E9B /* FinanceWExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FinanceWExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F0040224D1E63600FA8E9B /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		04F0040424D1E63600FA8E9B /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		04F0040724D1E63600FA8E9B /* FinanceW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceW.swift; sourceTree = "<group>"; };
+		04F0040924D1E63700FA8E9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04F0040B24D1E63700FA8E9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +70,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0496177E24D084FF00EFE7B4 /* Progress-Bar in Frameworks */,
+				04F003F924D1D8A500FA8E9B /* SwiftUICharts in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F003FD24D1E63600FA8E9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F0040524D1E63600FA8E9B /* SwiftUI.framework in Frameworks */,
+				04F0040324D1E63600FA8E9B /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				046C6F3924CCA30F009AF802 /* Finance */,
+				04F0040624D1E63600FA8E9B /* FinanceW */,
+				04F0040124D1E63600FA8E9B /* Frameworks */,
 				046C6F3824CCA30F009AF802 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				046C6F3724CCA30F009AF802 /* Finance.app */,
+				04F0040024D1E63600FA8E9B /* FinanceWExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,6 +109,8 @@
 		046C6F3924CCA30F009AF802 /* Finance */ = {
 			isa = PBXGroup;
 			children = (
+				046C6F4B24CCA32E009AF802 /* Model */,
+				046C6F4924CCA321009AF802 /* View */,
 				046C6F3A24CCA30F009AF802 /* FinanceApp.swift */,
 				046C6F3C24CCA30F009AF802 /* ContentView.swift */,
 				046C6F3E24CCA310009AF802 /* Assets.xcassets */,
@@ -69,6 +128,42 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		046C6F4924CCA321009AF802 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				046C6F4C24CCA38F009AF802 /* OnBoarding.swift */,
+				046C6F4E24CCA579009AF802 /* Main.swift */,
+				04F003FA24D1E4C400FA8E9B /* Shapes.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		046C6F4B24CCA32E009AF802 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04F0040124D1E63600FA8E9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04F0040224D1E63600FA8E9B /* WidgetKit.framework */,
+				04F0040424D1E63600FA8E9B /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04F0040624D1E63600FA8E9B /* FinanceW */ = {
+			isa = PBXGroup;
+			children = (
+				04F0040724D1E63600FA8E9B /* FinanceW.swift */,
+				04F0040924D1E63700FA8E9B /* Assets.xcassets */,
+				04F0040B24D1E63700FA8E9B /* Info.plist */,
+			);
+			path = FinanceW;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,15 +174,38 @@
 				046C6F3324CCA30F009AF802 /* Sources */,
 				046C6F3424CCA30F009AF802 /* Frameworks */,
 				046C6F3524CCA30F009AF802 /* Resources */,
+				04F0041224D1E63700FA8E9B /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04F0040D24D1E63700FA8E9B /* PBXTargetDependency */,
+			);
+			name = Finance;
+			packageProductDependencies = (
+				0496177D24D084FF00EFE7B4 /* Progress-Bar */,
+				04F003F824D1D8A500FA8E9B /* SwiftUICharts */,
+			);
+			productName = Finance;
+			productReference = 046C6F3724CCA30F009AF802 /* Finance.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04F003FF24D1E63600FA8E9B /* FinanceWExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04F0040F24D1E63700FA8E9B /* Build configuration list for PBXNativeTarget "FinanceWExtension" */;
+			buildPhases = (
+				04F003FC24D1E63600FA8E9B /* Sources */,
+				04F003FD24D1E63600FA8E9B /* Frameworks */,
+				04F003FE24D1E63600FA8E9B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Finance;
-			productName = Finance;
-			productReference = 046C6F3724CCA30F009AF802 /* Finance.app */;
-			productType = "com.apple.product-type.application";
+			name = FinanceWExtension;
+			productName = FinanceWExtension;
+			productReference = 04F0040024D1E63600FA8E9B /* FinanceWExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -101,6 +219,9 @@
 					046C6F3624CCA30F009AF802 = {
 						CreatedOnToolsVersion = 12.0;
 					};
+					04F003FF24D1E63600FA8E9B = {
+						CreatedOnToolsVersion = 12.0;
+					};
 				};
 			};
 			buildConfigurationList = 046C6F3224CCA30F009AF802 /* Build configuration list for PBXProject "Finance" */;
@@ -112,11 +233,16 @@
 				Base,
 			);
 			mainGroup = 046C6F2E24CCA30F009AF802;
+			packageReferences = (
+				0496177C24D084FF00EFE7B4 /* XCRemoteSwiftPackageReference "Progress-Bar-SwifttUI" */,
+				04F003F724D1D8A500FA8E9B /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
 			productRefGroup = 046C6F3824CCA30F009AF802 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				046C6F3624CCA30F009AF802 /* Finance */,
+				04F003FF24D1E63600FA8E9B /* FinanceWExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +257,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		04F003FE24D1E63600FA8E9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F0040A24D1E63700FA8E9B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,11 +273,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				046C6F3D24CCA30F009AF802 /* ContentView.swift in Sources */,
+				046C6F4D24CCA38F009AF802 /* OnBoarding.swift in Sources */,
+				04F003FB24D1E4C400FA8E9B /* Shapes.swift in Sources */,
+				046C6F4F24CCA579009AF802 /* Main.swift in Sources */,
 				046C6F3B24CCA30F009AF802 /* FinanceApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		04F003FC24D1E63600FA8E9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F0040824D1E63600FA8E9B /* FinanceW.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04F0040D24D1E63700FA8E9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04F003FF24D1E63600FA8E9B /* FinanceWExtension */;
+			targetProxy = 04F0040C24D1E63700FA8E9B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		046C6F4424CCA310009AF802 /* Debug */ = {
@@ -265,6 +418,7 @@
 		046C6F4724CCA310009AF802 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +441,7 @@
 		046C6F4824CCA310009AF802 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +456,48 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Ameddah-Achraf.Finance";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04F0041024D1E63700FA8E9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5G786Z6XBU;
+				INFOPLIST_FILE = FinanceW/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Ameddah-Achraf.Finance.FinanceW";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04F0041124D1E63700FA8E9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5G786Z6XBU;
+				INFOPLIST_FILE = FinanceW/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Ameddah-Achraf.Finance.FinanceW";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -327,7 +524,48 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		04F0040F24D1E63700FA8E9B /* Build configuration list for PBXNativeTarget "FinanceWExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F0041024D1E63700FA8E9B /* Debug */,
+				04F0041124D1E63700FA8E9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0496177C24D084FF00EFE7B4 /* XCRemoteSwiftPackageReference "Progress-Bar-SwifttUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AmeddahAchraf/Progress-Bar-SwifttUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
+		04F003F724D1D8A500FA8E9B /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = "2.0.0-beta.1";
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0496177D24D084FF00EFE7B4 /* Progress-Bar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0496177C24D084FF00EFE7B4 /* XCRemoteSwiftPackageReference "Progress-Bar-SwifttUI" */;
+			productName = "Progress-Bar";
+		};
+		04F003F824D1D8A500FA8E9B /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04F003F724D1D8A500FA8E9B /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 046C6F2F24CCA30F009AF802 /* Project object */;
 }
