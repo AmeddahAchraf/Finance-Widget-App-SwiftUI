@@ -24,9 +24,10 @@ extension Binding {
 struct Main: View {
     
     init() {
-        UISegmentedControl.appearance().selectedSegmentTintColor = UIColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-        UISegmentedControl.appearance().setTitleTextAttributes([.foregroundColor: UIColor.black, .font: UIFont.systemFont(ofSize: 13, weight: .bold)], for: .selected)
+        UISegmentedControl.appearance().selectedSegmentTintColor = UIColor(Color(#colorLiteral(red: 0.2880256678, green: 0.1134614047, blue: 0.8102525685, alpha: 1)))
+        UISegmentedControl.appearance().setTitleTextAttributes([.foregroundColor: UIColor.white, .font: UIFont.systemFont(ofSize: 13, weight: .bold)], for: .selected)
         UISegmentedControl.appearance().setTitleTextAttributes([.foregroundColor: UIColor.gray], for: .normal)
+    
     }
     
     let mixedColorStyle = ChartStyle(backgroundColor: .white, foregroundColor: [
@@ -43,7 +44,7 @@ struct Main: View {
         NavigationView {
             ZStack {
                 Color(.black)
-                    .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                    .edgesIgnoringSafeArea(.all)
                 VStack {
                     HStack {
                         Image(systemName: "chevron.left")
@@ -89,7 +90,7 @@ struct Main: View {
                     }
                     .data(getNumbers())
                     .chartStyle(mixedColorStyle)
-                    .padding(.leading, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                    .padding(.leading, 10)
                     
                     //Months
                     MonthView()
@@ -99,6 +100,7 @@ struct Main: View {
                         LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)), Color(#colorLiteral(red: 0.5399802801, green: 0.01270869007, blue: 0.9686274529, alpha: 1))]), startPoint: .top, endPoint: .bottom)
                             .frame(width: UIScreen.main.bounds.width*0.8, height: 100, alignment: .center)
                             .cornerRadius(15)
+                            .opacity(0.8)
                             
                         HStack {
                             CircularProgress(percentage: progress,
